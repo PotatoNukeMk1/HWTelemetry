@@ -23,6 +23,7 @@ public:
     uint8_t getDirection(void);
     int16_t getRPM(void);
     float getVoltage(void);
+    float getCurrent(void);
     uint8_t getESCTemperature(void);
     uint8_t getMotorTemperature(void);
     float getSpeed(void);
@@ -42,6 +43,7 @@ private:
     uint8_t direction = 0;
     int16_t rpm = 0;
     uint8_t voltage = 0;
+    int16_t current = 0;
     uint8_t escTemp = 0;
     uint8_t motorTemp = 0;
     uint8_t speed = 0;
